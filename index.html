@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Activity 8 Calculator</h1>
-        <div class="calculator">
+        <h1 class="animated fadeIn">Activity 8 Calculator</h1>
+        <div class="calculator animated slideInLeft">
             <div class="input-group">
                 <label for="num1">Enter first number:</label>
                 <input type="number" id="num1">
@@ -29,10 +29,12 @@
                 </select>
             </div>
             <button onclick="calculate()">Calculate</button>
-            <p id="result"></p>
+            <div class="result-field animated fadeIn">
+                <p id="result">Result: </p>
+            </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer animated fadeIn">
         Peruso, Frandilbert L. &copy; 2024
     </footer>
     <script src="index.js"></script>

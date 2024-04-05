@@ -24,5 +24,8 @@ function calculate() {
             break;
     }
 
-    document.getElementById('result').innerHTML = "Result: " + result;
+    // Display the result
+    var resultElement = document.getElementById('result');  
+    resultElement.textContent = "Result: " + result;
+    resultElement.style.textAlign = 'center'; // Align the result text to center
 }
