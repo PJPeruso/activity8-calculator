@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h1 {
+    margin-bottom: 60px;
+    margin-top: 40px;
+    font-size: 3.5em;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.calculator {
+    width: 350px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.685);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.calculator input, .calculator select, .calculator button {
+    padding: 15px;
+    width: calc(100% - 30px);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.calculator button {
+    background-color: #ff5252;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.calculator button:hover {
+    background-color: #d50000;
+}
+
+.calculator input {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.calculator input:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.671);
+    font-weight: bold;
+    box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    .calculator {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .input-group label {
+        font-size: 0.9em;
+    }
+
+    .calculator input, .calculator select, .calculator button {
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .footer {
+        padding: 15px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .calculator {
+        width: 70%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .input-group label {
+        font-size: 1em;
+    }
+
+    .calculator input, .calculator select, .calculator button {
+        padding: 12px;
+        width: calc(100% - 24px);
+    }
+
+    .footer {
+        padding: 18px;
+        font-size: 1.1em;
+    }
+}
